@@ -1,0 +1,19 @@
+.dashboard{
+
+    flex:1;
+
+    padding:30px;
+
+    background:#f6f8fc;
+
+}
+
+.dashboard-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}

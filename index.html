@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EBE Canvas Import Generator</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <link rel="stylesheet" href="components/Header/header.css">
+
+    <link rel="stylesheet" href="components/Sidebar/sidebar.css">
+
+    <link rel="stylesheet" href="components/DragDrop/dragdrop.css">
+
+    <link rel="stylesheet" href="components/SchoolsTable/schoolstable.css">
+
+    <link rel="stylesheet" href="components/ValidationPanel/validationpanel.css">
+
+    <link rel="stylesheet" href="components/ProgressPanel/progresspanel.css">
+
+    <link rel="stylesheet" href="components/Footer/footer.css">
+
+    <link rel="stylesheet" href="components/SchoolDetails/schooldetails.css">
+
+</head>
+
+<body>
+
+<input
+    type="file"
+    id="templateInput"
+    accept=".xlsx"
+    hidden
+>
+
+    <div id="app">
+
+        <header id="header-container">
+
+            Header Container
+
+        </header>
+
+        <main class="main-layout">
+
+            <aside id="sidebar-container">
+
+                Sidebar Container
+
+            </aside>
+
+            <section id="dashboard-container">
+
+                <div id="dragdrop-container">
+
+                    DragDrop Container
+
+                </div>
+
+                <div id="schoolstable-container">
+
+                    SchoolsTable Container
+
+                </div>
+
+                <div id="validation-container">
+
+                    ValidationPanel Container
+
+                </div>
+
+                <div id="progress-container">
+
+                    ProgressPanel Container
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer id="footer-container">
+
+            Footer Container
+
+        </footer>
+
+    </div>
+
+    <div id="schooldetails-container"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+
+    
+
+   
+    <script src="components/Dragdrop/dragDrop.js"></script>
+    <script src="components/SchoolsTable/schoolstable.js"></script>
+    <script src="components/ValidationPanel/validationpanel.js"></script>
+    <script src="components/ProgressPanel/progresspanel.js"></script>
+    <script src="components/Header/header.js"></script>
+    <script src="components/Sidebar/sidebar.js"></script>
+    <script src="components/Footer/footer.js"></script>
+    <script src="services/teacherMapper.js"></script>
+    <script src="services/validationEngine.js"></script>
+    <script src="services/templateConfig.js"></script>
+    <script src="services/formulaEngine.js"></script>
+    <script src="services/usersGenerator.js"></script>
+    <script src="services/coursesGenerator.js"></script>
+    <script src="services/enrollmentGenerator.js"></script>
+    <script src="services/csvGenerator.js"></script>
+    <script src="services/downloadCSV.js"></script>
+    <script src="services/excelReader.js"></script>
+    <script src="services/templateLoader.js"></script>
+    <script src="services/zipGenerator.js"></script>
+    <script src="components/SchoolDetails/schooldetails.js"></script>
+    
+
+    <script src="renderer.js"></script>
+    
+
+    
+
+</body>
+
+</html>

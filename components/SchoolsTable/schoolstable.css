@@ -1,0 +1,181 @@
+.schools-table-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+
+}
+
+.table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.table-header h2{
+
+    color:#333;
+
+}
+
+#totalFiles{
+
+    font-weight:bold;
+
+    color:#5B5CEB;
+
+}
+
+.schools-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.schools-table th{
+
+    text-align:left;
+
+    padding:15px;
+
+    background:#f5f7fb;
+
+    color:#444;
+
+}
+
+.schools-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.schools-table tbody tr:hover{
+
+    background:#fafbff;
+
+}
+
+.badge{
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.florida{
+
+    background:#E8F5E9;
+
+    color:#2E7D32;
+
+}
+
+.nationwide{
+
+    background:#E3F2FD;
+
+    color:#1565C0;
+
+}
+
+.status{
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.ready{
+
+    background:#E8F5E9;
+
+    color:#2E7D32;
+
+}
+
+.warning{
+
+    background:#FFF8E1;
+
+    color:#F9A825;
+
+}
+
+.view-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#5B5CEB;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.view-btn:hover{
+
+    background:#4748cf;
+
+    transform:translateY(-2px);
+
+}
+
+.view-btn i{
+
+    font-size:15px;
+
+}
+
+.view-btn:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    background:#cbd5e1;
+
+}

@@ -1,0 +1,51 @@
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 25px;
+
+    background:white;
+
+    border-top:1px solid #e5e7eb;
+
+    font-size:14px;
+
+}
+
+.footer-left{
+
+    font-weight:600;
+
+}
+
+.footer-left i{
+
+    color:#22c55e;
+
+    margin-right:8px;
+
+}
+
+.footer-center{
+
+    color:#666;
+
+}
+
+.footer-center i{
+
+    color:#5B5CEB;
+
+    margin-right:6px;
+
+}
+
+.footer-right{
+
+    color:#888;
+
+}

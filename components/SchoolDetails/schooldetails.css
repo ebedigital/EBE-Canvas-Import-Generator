@@ -1,0 +1,378 @@
+/*
+=========================================
+School Details Modal
+=========================================
+*/
+
+.modal{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ===================================== */
+
+.modal-content{
+
+    width:1000px;
+    max-width:95vw;
+
+    max-height:90vh;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ===================================== */
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 25px;
+
+    border-bottom:1px solid #ececec;
+
+    background:white;
+
+}
+
+.modal-header h2{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#1f2937;
+
+}
+
+#btnCloseModal{
+
+    border:none;
+
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+#btnCloseModal:hover{
+
+    color:#ef4444;
+
+}
+
+/* ===================================== */
+
+.modal-body{
+
+    padding:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    overflow:hidden;
+
+}
+
+/* ===================================== */
+
+.school-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px 40px;
+
+    background:#f8fafc;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:10px;
+
+    padding:20px;
+
+}
+
+.school-info p{
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+.school-info strong{
+
+    display:inline-block;
+
+    width:90px;
+
+    color:#374151;
+
+}
+
+/* ===================================== */
+
+.details-tabs{
+
+    display:flex;
+
+    gap:10px;
+
+    border-bottom:1px solid #ddd;
+
+    padding-bottom:12px;
+
+}
+
+.tab-btn{
+
+    border:none;
+
+    background:#f3f4f6;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-weight:600;
+
+}
+
+.tab-btn:hover{
+
+    background:#e5e7eb;
+
+}
+
+.tab-btn.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ===================================== */
+
+.tab-panel{
+
+    display:none;
+
+}
+
+.tab-panel.active{
+
+    display:block;
+
+}
+
+/* ===================================== */
+
+.teachers-table{
+
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+
+}
+
+.teachers-table thead{
+
+    background:#ffffff;
+    color:#374151;
+
+}
+
+.teachers-table th{
+
+    padding:14px;
+    text-align:left;
+    border-bottom:2px solid #e5e7eb;
+    font-weight:600;
+
+}
+
+.teachers-table td{
+
+    padding:14px;
+    border-bottom:1px solid #f1f5f9;
+    background:white;
+    color:#111827;
+
+}
+
+.teachers-table tbody tr{
+
+    background:white;
+
+}
+
+.teachers-table tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.teachers-table tbody tr:nth-child(even){
+
+    background:white;
+
+}
+
+.teachers-table tbody tr:nth-child(odd){
+
+    background:white;
+
+}
+
+
+/* ===================================== */
+
+#teachersTab{
+
+    max-height:350px;
+
+    overflow:auto;
+
+}
+
+/* ===================================== */
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    padding-top:10px;
+
+}
+
+/* ===================================== */
+
+.generate-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.generate-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===================================== */
+
+.close-btn{
+
+    background:#6b7280;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.close-btn:hover{
+
+    background:#4b5563;
+
+}
+
+/* ===================================== */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #ececec;
+
+}
+
+/* ===================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}

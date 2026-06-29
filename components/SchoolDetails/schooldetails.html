@@ -1,0 +1,293 @@
+<div id="schoolDetailsModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <!-- ==========================
+             HEADER
+        =========================== -->
+
+        <div class="modal-header">
+
+            <h2 id="modalSchoolName">
+
+                School Details
+
+            </h2>
+
+            <button id="btnCloseModal">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- ==========================
+             BODY
+        =========================== -->
+
+        <div class="modal-body">
+
+            <!-- ==========================
+                 SCHOOL INFO
+            =========================== -->
+
+            <div class="school-info">
+
+                <p>
+
+                    <strong>School:</strong>
+
+                    <span id="detailSchoolName"></span>
+
+                </p>
+
+                <p>
+
+                    <strong>Teachers:</strong>
+
+                    <span id="detailTeacherCount"></span>
+
+                </p>
+
+                <p>
+
+                    <strong>Template:</strong>
+
+                    <span id="detailTemplate"></span>
+
+                </p>
+
+                <p>
+
+                    <strong>Status:</strong>
+
+                    <span id="detailStatus"></span>
+
+                </p>
+
+            </div>
+
+            <hr>
+
+            <!-- ==========================
+                 TABS
+            =========================== -->
+
+            <div class="details-tabs">
+
+                <button
+                    class="tab-btn active"
+                    data-tab="teachers">
+
+                    Teachers
+
+                </button>
+
+                <button
+                    class="tab-btn"
+                    data-tab="users">
+
+                    Users
+
+                </button>
+
+                <button
+                    class="tab-btn"
+                    data-tab="courses">
+
+                    Courses
+
+                </button>
+
+        
+                <button
+                    class="tab-btn"
+                    data-tab="enrollments">
+
+                    Enrollments
+
+                </button>
+
+            </div>
+
+            <!-- ==========================
+                 TAB CONTENT
+            =========================== -->
+
+            <div id="tabContent">
+
+                <!-- ==========================
+                     TEACHERS
+                =========================== -->
+
+                <div
+                    id="teachersTab"
+                    class="tab-panel active">
+
+                    <table class="teachers-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>First Name</th>
+
+                                <th>Last Name</th>
+
+                                <th>Email</th>
+
+                                <th>Grade</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="teachersTableBody">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- ==========================
+                     USERS
+                =========================== -->
+
+            <div
+                id="usersTab"
+                class="tab-panel">
+
+                <table class="teachers-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>User ID</th>
+
+                            <th>Login ID</th>
+
+                            <th>First Name</th>
+
+                            <th>Last Name</th>
+
+                            <th>Email</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                     <tbody id="usersTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+                <!-- ==========================
+                     COURSES
+                =========================== -->
+
+            <div id="coursesTab" class="tab-panel">
+
+                <table class="teachers-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Course ID</th>
+
+                            <th>Short Name</th>
+
+                            <th>Long Name</th>
+
+                            <th>Term</th>
+
+                            <th>Blueprint_course_id</th>
+
+                            <th>Status</th>
+
+                          
+                
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="coursesTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+                <!-- ==========================
+                     ENROLLMENTS
+                =========================== -->
+
+            <div id="enrollmentsTab" class="tab-panel">
+
+                <table class="teachers-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Course ID</th>
+
+                            <th>User ID</th>
+
+                            <th>Role</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="enrollmentsTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- ==========================
+                 FOOTER
+            =========================== -->
+
+            <hr>
+
+            <div class="modal-footer">
+
+                <button
+                    id="btnGenerateZip"
+                    class="generate-btn">
+
+                    Generate Canvas ZIP
+
+                </button>
+
+                <button
+                    id="btnCloseFooter"
+                    class="close-btn">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
