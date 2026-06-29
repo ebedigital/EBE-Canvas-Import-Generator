@@ -36,8 +36,8 @@ async function initializeApp() {
     );
 
     await loadComponent(
-    "dragdrop-container",
-    "components/DragDrop/dragdrop.html"
+    "dragDrop-container",
+    "components/DragDrop/dragDrop.html"
 );
 
     await loadComponent(
@@ -65,7 +65,7 @@ async function initializeApp() {
         "components/Footer/footer.html"
     );
 
-    initializeDragDrop();
+    initializedragDrop();
 
     console.log("UI Loaded Successfully");
 
