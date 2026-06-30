@@ -65,7 +65,7 @@ async function initializeApp() {
         "components/Footer/footer.html"
     );
 
-    initializedragdrop();
+    initializeDragDrop();
 
     console.log("UI Loaded Successfully");
 
