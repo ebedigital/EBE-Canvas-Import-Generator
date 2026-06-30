@@ -14,7 +14,7 @@ Teacher Implementation Sheets
 
 function initializeDragDrop() {
 
-    console.log("=== initializeDragDrop called ===");
+    console.log("=== initializedragdrop called ===");
 
     const dropZone =
         document.querySelector(".drop-zone");
